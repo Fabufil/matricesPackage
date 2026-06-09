@@ -1,0 +1,6 @@
+src/*.o
+src/*.so
+.Rhistory
+.RData
+.Rproj.user
+*.tar.gz

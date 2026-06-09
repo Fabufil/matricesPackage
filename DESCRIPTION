@@ -1,0 +1,14 @@
+Package: matricesPackage
+Version: 0.1
+Date: 2026-06-04
+Title: Pakiet z macierzami
+Description: Niniejszy pakiet implementuje kilka podstawowych funkcji związanych z macierzami, czyli Rozkłady LU, Choleskiego-Banachiewicza, mnożenie przez wektor, oblicznie normy wektora oraz wyznacznika macierzy. Pakiet powstał w celach edukacyjnych.
+Authors@R: c(person("Filip", "Labus", role = c("aut", "cre"),
+                     email = "wewarszawie@gmail.com"))
+Author: Filip Labus [aut, cre]
+Maintainer: Filip Labus <wewarszawie@gmail.com>
+Depends: stats
+Suggests: tinytest
+License: AGPL (>= 3)
+Encoding: UTF-8
+Config/roxygen2/version: 8.0.0
