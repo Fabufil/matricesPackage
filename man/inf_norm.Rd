@@ -15,3 +15,8 @@ Returns a number which is the infinity norm of the given matrix.
 \description{
 Function calculates the infinity norm of the given matrix.
 }
+\examples{
+B <- matrix(rnorm(16))
+inf_norm(B)
+
+}

@@ -36,7 +36,7 @@ llt_decomposition <- function(A) {
 #' @return
 #' Function returns a list of L,U matrices, being an LU decomposition of matrix A.
 #' 
-#' @example 
+#' @examples
 #' B <- matrix(rnorm(16))
 #' lu_decomposition(B)
 #'
@@ -80,7 +80,7 @@ matrix_det <- function(A) {
 #' @return
 #' Returns a number which is the first norm of the given matrix.
 #'
-#' @example 
+#' @examples 
 #' B <- matrix(rnorm(16))
 #' first_norm(B)
 #'
@@ -100,7 +100,7 @@ first_norm <- function(A) {
 #' @return
 #' Returns a number which is the frobenius norm of the given matrix.
 #'
-#' @example 
+#' @examples 
 #' B <- matrix(rnorm(16))
 #' frobenius_norm(B)
 #' 
@@ -120,7 +120,7 @@ frobenius_norm <- function(A) {
 #' @return
 #' Returns a number which is the infinity norm of the given matrix.
 #'
-#' @example 
+#' @examples 
 #' B <- matrix(rnorm(16))
 #' inf_norm(B)
 #'

@@ -15,3 +15,8 @@ Returns a number which is the first norm of the given matrix.
 \description{
 Function calculates the first norm of the given matrix.
 }
+\examples{
+B <- matrix(rnorm(16))
+first_norm(B)
+
+}

@@ -15,3 +15,8 @@ Function returns a list of L,U matrices, being an LU decomposition of matrix A.
 \description{
 Funcion implements the LU decomposition od a sqare matrix.
 }
+\examples{
+B <- matrix(rnorm(16))
+lu_decomposition(B)
+
+}
