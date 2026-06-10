@@ -15,3 +15,7 @@ Pakiet implementuje kilka funkcji związanych z macierzami uczonych na przedmioc
 -   inf_norm - funkcja wyznacza normę nieskończoność (wierszową) macierzy
 
 -   frobenius_norm - funkcja wyznacza normę Frobeniusa macierzy
+
+## Instalacja
+
+By zainstalować pakiet należy mieć zainstalowany w R pakiet remotes. Następnie z poziomu konsoli R wywołać komendę remotes::install_github("Fabufil/matricesPackage").
