@@ -1,7 +1,9 @@
 <urlset xmlns = 'http://www.sitemaps.org/schemas/sitemap/0.9'>
 <url><loc>/404.html</loc></url>
+<url><loc>/LICENSE.html</loc></url>
 <url><loc>/authors.html</loc></url>
 <url><loc>/index.html</loc></url>
+<url><loc>/news.html</loc></url>
 <url><loc>/readme.html</loc></url>
 <url><loc>/reference/first_norm.html</loc></url>
 <url><loc>/reference/frobenius_norm.html</loc></url>

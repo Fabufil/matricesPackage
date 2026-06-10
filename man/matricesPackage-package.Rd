@@ -4,9 +4,9 @@
 \name{matricesPackage-package}
 \alias{matricesPackage}
 \alias{matricesPackage-package}
-\title{matricesPackage: Pakiet z macierzami}
+\title{matricesPackage: matricesPackage}
 \description{
-Niniejszy pakiet implementuje kilka podstawowych funkcji związanych z macierzami, czyli Rozkłady LU, Choleskiego-Banachiewicza, mnożenie przez wektor, oblicznie normy wektora oraz wyznacznika macierzy. Pakiet powstał w celach edukacyjnych.
+EN:This package implements a few basic matrix functions in R: LU and Cholesky decompositions, matrix determinant and a few matrix norms. Package was created for educational purposes. PL:Niniejszy pakiet implementuje kilka podstawowych funkcji związanych z macierzami, czyli Rozkłady LU, Choleskiego-Banachiewicza, kilka norm macierzowych oraz wyznacznika macierzy. Pakiet powstał w celach edukacyjnych.
 }
 \author{
 \strong{Maintainer}: Filip Labus \email{wewarszawie@gmail.com}
