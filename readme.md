@@ -1,21 +1,25 @@
 # matricesPackage
 
-Pakiet implementuje kilka funkcji związanych z macierzami uczonych na przedmiocie Metody numeryczne.
+EN: Package implements a few functions connected with matrices taught on numerical methods.
 
-## Zaimplementowane funkcje
+PL: Pakiet implementuje kilka funkcji związanych z macierzami uczonych na przedmiocie Metody numeryczne.
 
--   llt_decomposition - funkcja implementuje rozkład Choleskiego-Banachiewicza macierzy
+## Implemented functions/Zaimplementowane funkcje
 
--   lu_decomposition - funkcja implementuje rozkład LU macierzy
+-   llt_decomposition - function implements Cholesky decomposition/funkcja implementuje rozkład Choleskiego-Banachiewicza macierzy
 
--   matrix_det - funkcja wyznacza wyznacznik macierzy przy użyciu rozkładu Choleskiego-Banawiewicza
+-   lu_decomposition - function implements LU decomposition/funkcja implementuje rozkład LU macierzy
 
--   first_norm - funkcja wyznacza pierwszą normę (kolumnową) macierzy
+-   matrix_det - function calculates determinant of a matrix/funkcja wyznacza wyznacznik macierzy przy użyciu rozkładu Choleskiego-Banawiewicza
 
--   inf_norm - funkcja wyznacza normę nieskończoność (wierszową) macierzy
+-   first_norm - function calculates first norm of a matrix/funkcja wyznacza pierwszą normę (kolumnową) macierzy
 
--   frobenius_norm - funkcja wyznacza normę Frobeniusa macierzy
+-   inf_norm - function calculates infinity norm of a matrix/funkcja wyznacza normę nieskończoność (wierszową) macierzy
 
-## Instalacja
+-   frobenius_norm - function calculates Frobenius norm of a matrix/funkcja wyznacza normę Frobeniusa macierzy
 
-By zainstalować pakiet należy mieć zainstalowany w R pakiet remotes. Następnie z poziomu konsoli R wywołać komendę remotes::install_github("Fabufil/matricesPackage").
+## Installation/Instalacja
+
+EN: To install a package remote package is required. To install type remotes::install_github("Fabufil/matricesPackage") in the R console.
+
+PL: By zainstalować pakiet należy mieć zainstalowany w R pakiet remotes. Następnie z poziomu konsoli R wywołać komendę remotes::install_github("Fabufil/matricesPackage").
