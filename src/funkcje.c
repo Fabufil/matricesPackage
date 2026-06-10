@@ -160,7 +160,6 @@ SEXP matrix_norm_1(SEXP A) {
     for (int j = 0; j < n; j++) {
         double current_sum = 0.0;
         for (int i = 0; i < m; i++) {
-            // R przechowuje kolumnowo, wiec iteracja po 'i' (wierszach) jest w pamieci po kolei
             current_sum += fabs(ptrA[i + j * m]); 
         }
         if (current_sum > max_sum) {

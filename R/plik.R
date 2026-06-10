@@ -2,17 +2,17 @@
 "_PACKAGE"
 
 #' @title
-#' Cholesky-Banachiewicz decopmposition
+#' Cholesky-Banachiewicz decomposition
 #'
 #' @description
-#' Function implements Cholesky-Banachiewicz decopmposition on square positive defiife matrix.
+#' Function implements Cholesky-Banachiewicz decopmposition on square positive definite matrix.
 #' 
 #'
-#' @param A numeric matrix
+#' @param A numeric positive definite square matrix
 #' 
 #'
 #' @return
-#' Returns an lower-triangular matrix L after the LL^T decomposition.
+#' Returns a lower-triangular matrix L after the LL^T decomposition.
 #' 
 #' @examples
 #' B <- matrix(rnorm(16), nrow = 4, ncol = 4)
@@ -97,7 +97,7 @@ first_norm <- function(A) {
 #' Frobenius norm
 
 #' @description
-#' Function calculates the frobenius norm of the given matrix.
+#' Function calculates the Frobenius norm of the given matrix.
 #'
 #' @param A numeric matrix
 #'

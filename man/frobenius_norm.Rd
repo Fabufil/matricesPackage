@@ -13,7 +13,7 @@ frobenius_norm(A)
 Returns a number which is the frobenius norm of the given matrix.
 }
 \description{
-Function calculates the frobenius norm of the given matrix.
+Function calculates the Frobenius norm of the given matrix.
 }
 \examples{
 B <- matrix(rnorm(16), nrow = 4, ncol = 4)

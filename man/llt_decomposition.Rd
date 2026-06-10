@@ -2,18 +2,18 @@
 % Please edit documentation in R/plik.R
 \name{llt_decomposition}
 \alias{llt_decomposition}
-\title{Cholesky-Banachiewicz decopmposition}
+\title{Cholesky-Banachiewicz decomposition}
 \usage{
 llt_decomposition(A)
 }
 \arguments{
-\item{A}{numeric matrix}
+\item{A}{numeric positive definite square matrix}
 }
 \value{
-Returns an lower-triangular matrix L after the LL^T decomposition.
+Returns a lower-triangular matrix L after the LL^T decomposition.
 }
 \description{
-Function implements Cholesky-Banachiewicz decopmposition on square positive defiife matrix.
+Function implements Cholesky-Banachiewicz decopmposition on square positive definite matrix.
 }
 \examples{
 B <- matrix(rnorm(16), nrow = 4, ncol = 4)
