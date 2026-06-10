@@ -16,7 +16,8 @@ Returns a number which is the first norm of the given matrix.
 Function calculates the first norm of the given matrix.
 }
 \examples{
-B <- matrix(rnorm(16))
-first_norm(B)
+B <- matrix(rnorm(16), nrow = 4, ncol = 4)
+n1 <- first_norm(B)
+print(n1)
 
 }

@@ -15,9 +15,10 @@
 #' Returns an lower-triangular matrix L after the LL^T decomposition.
 #' 
 #' @examples
-#' B <- matrix(rnorm(16))
-#' C <- B%*%B
-#' llt_decomposition(C)
+#' B <- matrix(rnorm(16), nrow = 4, ncol = 4)
+#' C <- B %*% t(B)
+#' L <- llt_decomposition(C)
+#' print(L)
 #' 
 #' @export
 llt_decomposition <- function(A) {
@@ -37,9 +38,10 @@ llt_decomposition <- function(A) {
 #' Function returns a list of L,U matrices, being an LU decomposition of matrix A.
 #' 
 #' @examples
-#' B <- matrix(rnorm(16))
-#' lu_decomposition(B)
-#'
+#' B <- matrix(rnorm(16), nrow = 4, ncol = 4)
+#' res <- lu_decomposition(B)
+#' print(res)
+#' 
 #' @export
 lu_decomposition <- function(A)
 {
@@ -58,10 +60,11 @@ lu_decomposition <- function(A)
 #' Function returns a number which is  the determinant of given matrix.
 #' 
 #' @examples
-#' B <- matrix(rnorm(16))
-#' C <- B%*%B
-#' matrix_det(C)
-#'
+#' B <- matrix(rnorm(16), nrow = 4, ncol = 4)
+#' C <- B %*% t(B)
+#' d <- matrix_det(C)
+#' print(d)
+#' 
 #' @export
 matrix_det <- function(A) {
   L <- .Call("matrix_llt", A, PACKAGE="matricesPackage")
@@ -81,8 +84,9 @@ matrix_det <- function(A) {
 #' Returns a number which is the first norm of the given matrix.
 #'
 #' @examples 
-#' B <- matrix(rnorm(16))
-#' first_norm(B)
+#' B <- matrix(rnorm(16), nrow = 4, ncol = 4)
+#' n1 <- first_norm(B)
+#' print(n1)
 #'
 #' @export
 first_norm <- function(A) {
@@ -101,8 +105,9 @@ first_norm <- function(A) {
 #' Returns a number which is the frobenius norm of the given matrix.
 #'
 #' @examples 
-#' B <- matrix(rnorm(16))
-#' frobenius_norm(B)
+#' B <- matrix(rnorm(16), nrow = 4, ncol = 4)
+#' nf <- frobenius_norm(B)
+#' print(nf)
 #' 
 #' @export
 frobenius_norm <- function(A) {
@@ -121,8 +126,9 @@ frobenius_norm <- function(A) {
 #' Returns a number which is the infinity norm of the given matrix.
 #'
 #' @examples 
-#' B <- matrix(rnorm(16))
-#' inf_norm(B)
+#' B <- matrix(rnorm(16), nrow = 4, ncol = 4)
+#' ninf <- inf_norm(B)
+#' print(ninf)
 #'
 #' @export
 inf_norm <- function(A) {

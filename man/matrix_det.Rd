@@ -16,8 +16,9 @@ Function returns a number which is  the determinant of given matrix.
 Function calculates the matrix determinant using Cholesky-Banachiewicz decopmposition.
 }
 \examples{
-B <- matrix(rnorm(16))
-C <- B\%*\%B
-matrix_det(C)
+B <- matrix(rnorm(16), nrow = 4, ncol = 4)
+C <- B \%*\% t(B)
+d <- matrix_det(C)
+print(d)
 
 }

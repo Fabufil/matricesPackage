@@ -62,9 +62,23 @@
 
     <div id="ref-examples">
     <h2>Examples</h2>
-    <div class="sourceCode"><pre class="sourceCode r"><code><span class="r-in"><span><span class="va">B</span> <span class="op">&lt;-</span> <span class="fu"><a href="https://rdrr.io/r/base/matrix.html" class="external-link">matrix</a></span><span class="op">(</span><span class="fu"><a href="https://rdrr.io/r/stats/Normal.html" class="external-link">rnorm</a></span><span class="op">(</span><span class="fl">16</span><span class="op">)</span><span class="op">)</span></span></span>
-<span class="r-in"><span><span class="fu">lu_decomposition</span><span class="op">(</span><span class="va">B</span><span class="op">)</span></span></span>
-<span class="r-err co"><span class="r-pr">#&gt;</span> <span class="error">Error in lu_decomposition(B):</span> Macierz musi byc kwadratowa.</span>
+    <div class="sourceCode"><pre class="sourceCode r"><code><span class="r-in"><span><span class="va">B</span> <span class="op">&lt;-</span> <span class="fu"><a href="https://rdrr.io/r/base/matrix.html" class="external-link">matrix</a></span><span class="op">(</span><span class="fu"><a href="https://rdrr.io/r/stats/Normal.html" class="external-link">rnorm</a></span><span class="op">(</span><span class="fl">16</span><span class="op">)</span>, nrow <span class="op">=</span> <span class="fl">4</span>, ncol <span class="op">=</span> <span class="fl">4</span><span class="op">)</span></span></span>
+<span class="r-in"><span><span class="va">res</span> <span class="op">&lt;-</span> <span class="fu">lu_decomposition</span><span class="op">(</span><span class="va">B</span><span class="op">)</span></span></span>
+<span class="r-in"><span><span class="fu"><a href="https://rdrr.io/r/base/print.html" class="external-link">print</a></span><span class="op">(</span><span class="va">res</span><span class="op">)</span></span></span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> $L</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span>            [,1]      [,2]      [,3] [,4]</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> [1,]  1.0000000 0.0000000  0.000000    0</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> [2,]  0.8654187 1.0000000  0.000000    0</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> [3,] -0.1672013 0.5060710  1.000000    0</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> [4,] -0.7869134 0.7122063 -6.752028    1</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> $U</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span>           [,1]      [,2]       [,3]       [,4]</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> [1,] -1.699451 0.2366963 -0.1099357  1.2983928</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> [2,]  0.000000 1.1134520  0.2673221 -0.3748621</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> [3,]  0.000000 0.0000000 -0.2439926  0.9630241</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> [4,]  0.000000 0.0000000  0.0000000  7.2428102</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> </span>
 <span class="r-in"><span></span></span>
 </code></pre></div>
     </div>

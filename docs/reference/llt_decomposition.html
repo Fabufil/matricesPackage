@@ -62,11 +62,15 @@
 
     <div id="ref-examples">
     <h2>Examples</h2>
-    <div class="sourceCode"><pre class="sourceCode r"><code><span class="r-in"><span><span class="va">B</span> <span class="op">&lt;-</span> <span class="fu"><a href="https://rdrr.io/r/base/matrix.html" class="external-link">matrix</a></span><span class="op">(</span><span class="fu"><a href="https://rdrr.io/r/stats/Normal.html" class="external-link">rnorm</a></span><span class="op">(</span><span class="fl">16</span><span class="op">)</span><span class="op">)</span></span></span>
-<span class="r-in"><span><span class="va">C</span> <span class="op">&lt;-</span> <span class="va">B</span><span class="op"><a href="https://rdrr.io/r/base/matmult.html" class="external-link">%*%</a></span><span class="va">B</span></span></span>
-<span class="r-err co"><span class="r-pr">#&gt;</span> <span class="error">Error in B %*% B:</span> non-conformable arguments</span>
-<span class="r-in"><span><span class="fu">llt_decomposition</span><span class="op">(</span><span class="va">C</span><span class="op">)</span></span></span>
-<span class="r-err co"><span class="r-pr">#&gt;</span> <span class="error">Error in llt_decomposition(C):</span> Macierz musi byc numeryczna.</span>
+    <div class="sourceCode"><pre class="sourceCode r"><code><span class="r-in"><span><span class="va">B</span> <span class="op">&lt;-</span> <span class="fu"><a href="https://rdrr.io/r/base/matrix.html" class="external-link">matrix</a></span><span class="op">(</span><span class="fu"><a href="https://rdrr.io/r/stats/Normal.html" class="external-link">rnorm</a></span><span class="op">(</span><span class="fl">16</span><span class="op">)</span>, nrow <span class="op">=</span> <span class="fl">4</span>, ncol <span class="op">=</span> <span class="fl">4</span><span class="op">)</span></span></span>
+<span class="r-in"><span><span class="va">C</span> <span class="op">&lt;-</span> <span class="va">B</span> <span class="op"><a href="https://rdrr.io/r/base/matmult.html" class="external-link">%*%</a></span> <span class="fu"><a href="https://rdrr.io/r/base/t.html" class="external-link">t</a></span><span class="op">(</span><span class="va">B</span><span class="op">)</span></span></span>
+<span class="r-in"><span><span class="va">L</span> <span class="op">&lt;-</span> <span class="fu">llt_decomposition</span><span class="op">(</span><span class="va">C</span><span class="op">)</span></span></span>
+<span class="r-in"><span><span class="fu"><a href="https://rdrr.io/r/base/print.html" class="external-link">print</a></span><span class="op">(</span><span class="va">L</span><span class="op">)</span></span></span>
+<span class="r-out co"><span class="r-pr">#&gt;</span>            [,1]        [,2]       [,3]     [,4]</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> [1,]  2.7847701  0.00000000  0.0000000 0.000000</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> [2,] -2.0360044  2.10850506  0.0000000 0.000000</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> [3,]  0.2721820 -1.04077508  1.1615920 0.000000</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> [4,] -0.3654651 -0.05983063 -0.1354113 0.519762</span>
 <span class="r-in"><span></span></span>
 </code></pre></div>
     </div>
