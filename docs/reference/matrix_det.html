@@ -57,9 +57,19 @@
 </dl></div>
     <div id="value">
     <h2>Value</h2>
-    <p>Functio returns a number which is  the determinant of given matrix.</p>
+    <p>Function returns a number which is  the determinant of given matrix.</p>
     </div>
 
+    <div id="ref-examples">
+    <h2>Examples</h2>
+    <div class="sourceCode"><pre class="sourceCode r"><code><span class="r-in"><span><span class="va">B</span> <span class="op">&lt;-</span> <span class="fu"><a href="https://rdrr.io/r/base/matrix.html" class="external-link">matrix</a></span><span class="op">(</span><span class="fu"><a href="https://rdrr.io/r/stats/Normal.html" class="external-link">rnorm</a></span><span class="op">(</span><span class="fl">16</span><span class="op">)</span><span class="op">)</span></span></span>
+<span class="r-in"><span><span class="va">C</span> <span class="op">&lt;-</span> <span class="va">B</span><span class="op"><a href="https://rdrr.io/r/base/matmult.html" class="external-link">%*%</a></span><span class="va">B</span></span></span>
+<span class="r-err co"><span class="r-pr">#&gt;</span> <span class="error">Error in B %*% B:</span> non-conformable arguments</span>
+<span class="r-in"><span><span class="fu">matrix_det</span><span class="op">(</span><span class="va">C</span><span class="op">)</span></span></span>
+<span class="r-err co"><span class="r-pr">#&gt;</span> <span class="error">Error in matrix_det(C):</span> Macierz musi byc numeryczna.</span>
+<span class="r-in"><span></span></span>
+</code></pre></div>
+    </div>
   </div>
   <div class="col-md-3 hidden-xs hidden-sm" id="pkgdown-sidebar">
     <nav id="toc" data-toggle="toc" class="sticky-top"><h2 data-toc-skip>Contents</h2>

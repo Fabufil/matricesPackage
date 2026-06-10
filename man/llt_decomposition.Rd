@@ -15,3 +15,9 @@ Returns an lower-triangular matrix L after the LL^T decomposition.
 \description{
 Function implements Cholesky-Banachiewicz decopmposition on square positive defiife matrix.
 }
+\examples{
+B <- matrix(rnorm(16))
+C <- B\%*\%B
+llt_decomposition(C)
+
+}

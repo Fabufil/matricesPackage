@@ -10,8 +10,14 @@ matrix_det(A)
 \item{A}{numeric matrix}
 }
 \value{
-Functio returns a number which is  the determinant of given matrix.
+Function returns a number which is  the determinant of given matrix.
 }
 \description{
 Function calculates the matrix determinant using Cholesky-Banachiewicz decopmposition.
+}
+\examples{
+B <- matrix(rnorm(16))
+C <- B\%*\%B
+matrix_det(C)
+
 }
